@@ -146,7 +146,7 @@ To run the test suite, you can use the following commands:
 
     $ pip install -e .
     $ pip install -r requirements.txt
-    $ python manage.py test
+    $ python setup.py test
 
 
 Change Log
