@@ -6,6 +6,7 @@ Packaging information and tools.
 """
 
 
+from os.path import abspath, dirname, join, normpath
 from subprocess import call
 from sys import exit
 
@@ -68,7 +69,7 @@ setup(
     url = 'https://github.com/rdegges/python-ipify',
     keywords = 'python api client ipify ip address public ipv4 ipv6 service',
     description = 'The official client library for ipify: A Simple IP Address API.',
-    long_description = '',
+    long_description = open(normpath(join(dirname(abspath(__file__)), 'README.rst'))).read(),
     classifiers = [
     ],
 
