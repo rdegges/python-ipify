@@ -1,7 +1,8 @@
 python-ipify
 ============
 
-The official client library for ipify: A Simple IP Address API.
+The official client library for `ipify <http://www.ipify.org/>`_: *A Simple IP
+Address API*.
 
 .. image:: https://img.shields.io/pypi/v/ipify.svg
     :alt: python-ipify Release
