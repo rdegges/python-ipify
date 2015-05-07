@@ -32,7 +32,7 @@ class TestCommand(Command):
 
     def run(self):
         """Run the test suite."""
-        exit(call(['py.test', '--cov', 'ipify']))
+        exit(call(['py.test', '--cov-report', 'term-missing', '--cov', 'ipify']))
 
 
 setup(
