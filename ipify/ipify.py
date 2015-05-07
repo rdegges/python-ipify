@@ -50,7 +50,7 @@ def get_ip():
         raise ConnectionError("The request failed because it wasn't able to reach the ipify service. This is most likely due to a networking error of some sort.")
 
     if resp.status_code != 200:
-        raise ServiceError('Received an invalid status code from ipify:' + resp.status_code + '. The service might be experiencing issues.')
+        raise ServiceError('Received an invalid status code from ipify:' + str(resp.status_code) + '. The service might be experiencing issues.')
     elif not resp.text:
         raise ServiceError('Received an response from ipify. The service might be experiencing issues.')
 
