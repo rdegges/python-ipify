@@ -11,10 +11,7 @@ from sys import exit
 
 from setuptools import Command, find_packages, setup
 
-from ipify import (
-    __doc__ as description,
-    __version__ as version,
-)
+from ipify import __doc__ as description
 
 
 class TestCommand(Command):
@@ -43,7 +40,7 @@ setup(
 
     # Basic package information:
     name = 'ipify',
-    version = version,
+    version = '1.0.0',
     packages = find_packages(exclude=['tests']),
 
     # Packaging options:
