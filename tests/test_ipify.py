@@ -1,6 +1,6 @@
 """
-tests.ipify
-~~~~~~~~~~~
+tests.ipify.ipify
+~~~~~~~~~~~~~~~~~
 
 All tests for our ipify.ipify module.
 """
@@ -8,11 +8,13 @@ All tests for our ipify.ipify module.
 
 from unittest import TestCase
 
-from ipify import __version__
-from ipify.ipify import USER_AGENT
+from requests.models import Response
+
+from ipify.ipify import _get_ip_resp
 
 
-class UserAgentTest(TestCase):
+class GetIpRespTest(TestCase):
+    """Tests for our helper function: ``_get_ip_resp``."""
 
-    def test_user_agent_contains_library_version(self):
-        self.assertTrue(__version__ in USER_AGENT)
+    def test_returns_response(self):
+        self.assertIsInstance(_get_ip_resp(), Response)
