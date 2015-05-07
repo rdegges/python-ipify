@@ -155,6 +155,15 @@ Change Log
 All library changes, in descending order.
 
 
+Version 1.0.1
+*************
+
+**Not yet released.**
+
+- Fixing typo in the README.  Thanks `@prologic <https://github.com/prologic>`_
+  for the find!
+
+
 Version 1.0.0
 *************
 
