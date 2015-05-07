@@ -11,8 +11,6 @@ from sys import exit
 
 from setuptools import Command, find_packages, setup
 
-from ipify import __doc__ as description
-
 
 class TestCommand(Command):
     """
@@ -70,7 +68,7 @@ setup(
     url = 'https://github.com/rdegges/python-ipify',
     keywords = 'python api client ipify ip address public ipv4 ipv6 service',
     description = 'The official client library for ipify: A Simple IP Address API.',
-    long_description = description,
+    long_description = '',
     classifiers = [
     ],
 
