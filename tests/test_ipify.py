@@ -49,13 +49,10 @@ class GetIpTest(BaseTest):
         self.assertRaises(IpifyException, get_ip)
 
     def test_raises_service_error_on_error(self):
-        # TODO: Make ipify's API service only respond to the root URI -- it
-        # should return a 404 for any invalid URIs.
-        #import ipify
+        import ipify
 
-        #ipify.ipify.API_URI = 'https://api.ipify.org/woo'
-        #self.assertRaises(ServiceError, get_ip)
-        pass
+        ipify.ipify.API_URI = 'https://api.ipify.org/woo'
+        self.assertRaises(ServiceError, get_ip)
 
     def test_raises_service_error_on_empty_body(self):
         # TODO: Find a URI that is valid (returns a 200), but has an empty body.
