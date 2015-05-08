@@ -162,6 +162,8 @@ Version 1.0.1
 
 - Fixing typo in the README.  Thanks `@prologic <https://github.com/prologic>`_
   for the find!
+- Adding a working test for exercising ``ServiceError`` exceptions.  Improves
+  test coverage a bit =)
 
 
 Version 1.0.0
