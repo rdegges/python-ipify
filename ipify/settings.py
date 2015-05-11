@@ -18,8 +18,8 @@ API_URI = 'https://api.ipify.org'
 # The maximum amount of tries to attempt when making API calls.
 MAX_TRIES = 3
 
-# This dictionary is used to dynamically select the appropriate platform for the
-# user agent string.
+# This dictionary is used to dynamically select the appropriate platform for
+# the user agent string.
 OS_VERSION_INFO = {
     'Linux': '%s' % (linux_distribution()[0]),
     'Windows': '%s' % (win32_ver()[0]),
