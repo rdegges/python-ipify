@@ -53,3 +53,6 @@ class GetIpTest(BaseTest):
 
         ipify.ipify.API_URI = 'https://api.ipify.org/woo'
         self.assertRaises(ServiceError, get_ip)
+
+    def test_returns_ip_address(self):
+        self.assertTrue(get_ip())
