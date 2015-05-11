@@ -164,6 +164,10 @@ Version 1.0.1
   for the find!
 - Adding a working test for exercising ``ServiceError`` exceptions.  Improves
   test coverage a bit =)
+- Removing unnecessary assertions / tests.
+- Adding test to improve test coverage to 100% =)
+- Fixing minor style issues.  I'm really obsessed with code style / quality,
+  don't judge me!
 
 
 Version 1.0.0
