@@ -53,7 +53,3 @@ class GetIpTest(BaseTest):
 
         ipify.ipify.API_URI = 'https://api.ipify.org/woo'
         self.assertRaises(ServiceError, get_ip)
-
-    def test_raises_service_error_on_empty_body(self):
-        # TODO: Find a URI that is valid (returns a 200), but has an empty body.
-        pass
