@@ -39,13 +39,13 @@ class GetIpTest(BaseTest):
     def test_raises_connection_error_on_connection_error(self):
         import ipify
 
-        ipify.ipify.API_URI = 'https://api.asdgasggasgdasgdsasgdasdfadfsdfsa.com'
+        ipify.ipify.API_URI = 'https://api.asdgasggasgdasgdsasgdasdfadfsda.com'
         self.assertRaises(ConnectionError, get_ip)
 
     def test_raises_ipify_exception_on_error(self):
         import ipify
 
-        ipify.ipify.API_URI = 'https://api.asdgasggasgdasgdsasgdasdfadfsdfsa.com'
+        ipify.ipify.API_URI = 'https://api.asdgasggasgdasgdsasgdasdfadfsds.com'
         self.assertRaises(IpifyException, get_ip)
 
     def test_raises_service_error_on_error(self):
