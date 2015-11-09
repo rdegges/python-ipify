@@ -1,7 +1,7 @@
 python-ipify
 ============
 
-The official client library for `ipify <http://www.ipify.org/>`_: *A Simple IP
+The official client library for `ipify <https://www.ipify.org/>`_: *A Simple IP
 Address API*.
 
 .. image:: https://img.shields.io/pypi/v/ipify.svg
@@ -32,7 +32,7 @@ Meta
 Purpose
 -------
 
-`ipify <http://www.ipify.org/>`_ is the best IP address lookup service on the
+`ipify <https://www.ipify.org/>`_ is the best IP address lookup service on the
 internet.  It's fast, simple, scalable, open source, and well-funded (*by me!*).
 
 In short: if you need a way to pragmatically get your public IP address, ipify

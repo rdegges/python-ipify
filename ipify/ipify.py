@@ -18,7 +18,7 @@ from .settings import API_URI, MAX_TRIES, USER_AGENT
 def _get_ip_resp():
     """
     Internal function which attempts to retrieve this machine's public IP
-    address from the ipify service (http://www.ipify.org).
+    address from the ipify service (https://www.ipify.org).
 
     :rtype: obj
     :returns: The response object from the HTTP request.
@@ -35,7 +35,7 @@ def _get_ip_resp():
 
 def get_ip():
     """
-    Query the ipify service (http://www.ipify.org) to retrieve this machine's
+    Query the ipify service (https://www.ipify.org) to retrieve this machine's
     public IP address.
 
     :rtype: string
