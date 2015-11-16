@@ -160,6 +160,8 @@ Version 1.0.1
 
 **Not yet released.**
 
+- Fixing URLs in the README / comments to point to https URLs.  Thanks to
+  `@ktdreyer <https://github.com/ktdreyer>`_ for the pull request!
 - Fixing typo in the README.  Thanks `@prologic <https://github.com/prologic>`_
   for the find!
 - Adding a working test for exercising ``ServiceError`` exceptions.  Improves
