@@ -2,7 +2,7 @@
 ipify
 ~~~~~
 
-The official client library for ipify: http://www.ipify.org - A Simple IP
+The official client library for ipify: https://www.ipify.org - A Simple IP
 Address API.
 
 ipify will get your public IP address, and return it.  No questions asked.
@@ -17,7 +17,7 @@ ipify is a great choice because it's:
     - Personally funded by Randall Degges (http://www.rdegges.com), so it
       won't just *disappear* some day.
 
-For more information, visit the project website: http://www.ipify.org
+For more information, visit the project website: https://www.ipify.org
 
 -Randall
 """
