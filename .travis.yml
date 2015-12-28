@@ -8,6 +8,9 @@ python:
   - 'pypy3'
 install:
   - pip install -e .
+    # python-coveralls requires coverage 3.
+    # See https://github.com/z4r/python-coveralls/pull/41
+  - pip install coverage==3.7.1
   - pip install -r requirements.txt
 script:
   - python setup.py test
