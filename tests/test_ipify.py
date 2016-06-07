@@ -55,4 +55,23 @@ class GetIpTest(BaseTest):
         self.assertRaises(ServiceError, get_ip)
 
     def test_returns_ip_address(self):
-        self.assertTrue(get_ip())
+        from ipify import get_ip
+        import socket
+
+        def valid_ip(ip):
+            try:
+                #IPv4
+                socket.inet_pton(socket.AF_INET, ip)
+                return True
+            except OSError:
+                pass
+            try:
+                #IPv6
+                socket.inet_pton(socket.AF_INET6, ip)
+                return True
+            except OSError:
+                pass
+            
+            return False
+
+        self.assertTrue(valid_ip(get_ip()))
