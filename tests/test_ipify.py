@@ -6,6 +6,7 @@ All tests for our ipify.ipify module.
 """
 
 
+from socket import AF_INET, AF_INET6, inet_pton
 from unittest import TestCase
 
 from requests.models import Response
@@ -56,22 +57,22 @@ class GetIpTest(BaseTest):
 
     def test_returns_ip_address(self):
         from ipify import get_ip
-        import socket
 
-        def valid_ip(ip):
+        def is_valid_ip(ip):
+            # IPv4
             try:
-                #IPv4
-                socket.inet_pton(socket.AF_INET, ip)
+                inet_pton(AF_INET, ip)
                 return True
             except OSError:
                 pass
+
+            # IPv6
             try:
-                #IPv6
-                socket.inet_pton(socket.AF_INET6, ip)
+                inet_pton(AF_INET6, ip)
                 return True
             except OSError:
                 pass
-            
+
             return False
 
-        self.assertTrue(valid_ip(get_ip()))
+        self.assertTrue(is_valid_ip(get_ip()))
