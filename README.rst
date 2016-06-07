@@ -160,6 +160,8 @@ Version 1.0.1
 
 **Not yet released.**
 
+- Improving test to actually validate IP addresses.  Thanks to `@lethargilistic
+  <https://github.com/lethargilistic>`_ for the pull request!
 - Fixing URLs in the README / comments to point to https URLs.  Thanks to
   `@ktdreyer <https://github.com/ktdreyer>`_ for the pull request!
 - Fixing typo in the README.  Thanks `@prologic <https://github.com/prologic>`_
