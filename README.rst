@@ -172,6 +172,7 @@ Version 1.0.1
 - Adding test to improve test coverage to 100% =)
 - Fixing minor style issues.  I'm really obsessed with code style / quality,
   don't judge me!
+- Adding Python 3.5 / 3.6 support.
 
 
 Version 1.0.0
