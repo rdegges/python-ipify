@@ -34,7 +34,6 @@ class TestCommand(Command):
         """Run the test suite."""
         exit(call(['py.test', '--cov-report', 'term-missing', '--cov', 'ipify']))
 
-
 setup(
 
     # Basic package information:
@@ -52,6 +51,7 @@ setup(
         'requests>=2.7.0',
     ],
     tests_require = [
+        {':python_version=="3.2"': ['pytest<3']},
         'pytest>=2.7.0',
         'pytest-cov>=1.8.1',
         'python-coveralls>=2.5.0',
@@ -95,3 +95,4 @@ setup(
     ],
 
 )
+
