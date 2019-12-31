@@ -6,7 +6,7 @@ This module contains internal settings that make our ipify library simpler.
 """
 
 
-from platform import mac_ver, win32_ver, linux_distribution, system
+from platform import mac_ver, win32_ver, release, system
 from sys import version_info as vi
 
 from . import __version__
@@ -21,7 +21,7 @@ MAX_TRIES = 3
 # This dictionary is used to dynamically select the appropriate platform for
 # the user agent string.
 OS_VERSION_INFO = {
-    'Linux': '%s' % (linux_distribution()[0]),
+    'Linux': '%s' % (release()),
     'Windows': '%s' % (win32_ver()[0]),
     'Darwin': '%s' % (mac_ver()[0]),
 }
