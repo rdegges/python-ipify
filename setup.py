@@ -50,6 +50,7 @@ setup(
     install_requires = [
         'backoff>=1.0.7',
         'requests>=2.7.0',
+        'distro>=1.4.0',
     ],
     tests_require = [
         'pytest>=2.7.0',

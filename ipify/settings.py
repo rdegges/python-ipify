@@ -6,7 +6,8 @@ This module contains internal settings that make our ipify library simpler.
 """
 
 
-from platform import mac_ver, win32_ver, linux_distribution, system
+from platform import mac_ver, win32_ver, system
+from distro import linux_distribution
 from sys import version_info as vi
 
 from . import __version__
