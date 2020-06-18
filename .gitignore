@@ -3,3 +3,7 @@
 *.egg-info
 build
 dist
+
+# JetBrains/PyCharm
+.idea/
+venv*/
