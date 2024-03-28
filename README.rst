@@ -26,7 +26,7 @@ Meta
 - Author: Randall Degges
 - Email: r@rdegges.com
 - Site: http://www.rdegges.com
-- Status: maintained, active
+- Status: no longer maintained
 
 
 Purpose
